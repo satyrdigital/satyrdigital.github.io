@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satyr Digital</title>
+  <meta name="description" content="Satyr Digital — digital agency. Build · Grow · Advise.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://satyr.digital/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: oklch(0.975 0.008 75);
+      --fg: oklch(0.180 0.012 60);
+      --muted: oklch(0.380 0.010 60);
+      --faint: oklch(0.450 0.008 60);
+      --line: oklch(0.870 0.010 70);
+      --accent: oklch(0.540 0.180 28);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: oklch(0.150 0.012 60);
+        --fg: oklch(0.955 0.010 75);
+        --muted: oklch(0.720 0.010 70);
+        --faint: oklch(0.520 0.010 65);
+        --line: oklch(0.290 0.012 60);
+        --accent: oklch(0.700 0.180 35);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--fg);
+      font: 400 17px/1.5 "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 24px;
+    }
+    h1 { margin: 0; line-height: 0; }
+    .logo { display: block; width: clamp(240px, 56vw, 380px); height: auto; }
+    .role { margin: 28px 0 0; font-size: 18px; color: var(--muted); }
+    .pillars { margin: 6px 0 0; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+    nav { display: flex; gap: 28px; margin-top: 40px; }
+    nav a {
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 15px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2px;
+      transition: border-color 120ms ease, color 120ms ease;
+    }
+    nav a:hover { color: var(--accent); border-color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    footer { padding: 24px; text-align: center; font-size: 13px; color: var(--faint); }
+    @media (prefers-reduced-motion: reduce) { nav a { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1><img class="logo" src="assets/logo.svg" width="414" height="180" alt="Satyr Digital"></h1>
+    <p class="role">Digital agency</p>
+    <p class="pillars">Build · Grow · Advise</p>
+    <nav aria-label="Links">
+      <a href="https://satyr.digital">Website</a>
+      <a href="https://github.com/satyrdigital">GitHub</a>
+    </nav>
+  </main>
+  <footer>© 2026 Satyr Digital</footer>
+</body>
+</html>
